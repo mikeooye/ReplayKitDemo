@@ -13,7 +13,51 @@
 		284143E62A551EF500358155 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 284143E42A551EF500358155 /* Main.storyboard */; };
 		284143E82A551EF600358155 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 284143E72A551EF600358155 /* Assets.xcassets */; };
 		284143EB2A551EF600358155 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 284143E92A551EF600358155 /* LaunchScreen.storyboard */; };
+		284143FA2A551F2100358155 /* ReplayKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 284143F92A551F2100358155 /* ReplayKit.framework */; };
+		284143FD2A551F2100358155 /* SampleHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284143FC2A551F2100358155 /* SampleHandler.swift */; };
+		284144042A551F2100358155 /* ReplayKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 284143F92A551F2100358155 /* ReplayKit.framework */; };
+		284144062A551F2100358155 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 284144052A551F2100358155 /* UIKit.framework */; };
+		284144092A551F2100358155 /* BroadcastSetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284144082A551F2100358155 /* BroadcastSetupViewController.swift */; };
+		2841440D2A551F2100358155 /* BroadcastSetupUI.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 284144032A551F2100358155 /* BroadcastSetupUI.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		284144102A551F2100358155 /* Broadcast.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 284143F72A551F2100358155 /* Broadcast.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		2841441A2A55546300358155 /* Helper.dart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284144192A55546300358155 /* Helper.dart.swift */; };
+		2841441B2A55546700358155 /* Helper.dart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284144192A55546300358155 /* Helper.dart.swift */; };
+		A4969698AF9BD968373E08C6 /* Pods_ReplayDemo_v2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77A2B4B4135852A1F52A7782 /* Pods_ReplayDemo_v2.framework */; };
+		EF502F0707FB052E2FC20037 /* Pods_BroadcastSetupUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9C88400C5106377D3BF144C /* Pods_BroadcastSetupUI.framework */; };
+		F800A05B704B55017D427385 /* Pods_Broadcast.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2455532DA3FC046F4ED9170 /* Pods_Broadcast.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2841440B2A551F2100358155 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 284143D32A551EF500358155 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 284144022A551F2100358155;
+			remoteInfo = BroadcastSetupUI;
+		};
+		2841440E2A551F2100358155 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 284143D32A551EF500358155 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 284143F62A551F2100358155;
+			remoteInfo = Broadcast;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		284144172A551F2100358155 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				284144102A551F2100358155 /* Broadcast.appex in Embed Foundation Extensions */,
+				2841440D2A551F2100358155 /* BroadcastSetupUI.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		284143DB2A551EF500358155 /* ReplayDemo_v2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReplayDemo_v2.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,6 +68,21 @@
 		284143E72A551EF600358155 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		284143EA2A551EF600358155 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		284143EC2A551EF600358155 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		284143F22A551F0000358155 /* ReplayDemo_v2.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ReplayDemo_v2.entitlements; sourceTree = "<group>"; };
+		284143F72A551F2100358155 /* Broadcast.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Broadcast.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		284143F92A551F2100358155 /* ReplayKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReplayKit.framework; path = System/Library/Frameworks/ReplayKit.framework; sourceTree = SDKROOT; };
+		284143FC2A551F2100358155 /* SampleHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleHandler.swift; sourceTree = "<group>"; };
+		284143FE2A551F2100358155 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		284144032A551F2100358155 /* BroadcastSetupUI.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = BroadcastSetupUI.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		284144052A551F2100358155 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		284144082A551F2100358155 /* BroadcastSetupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BroadcastSetupViewController.swift; sourceTree = "<group>"; };
+		2841440A2A551F2100358155 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		284144182A551F4200358155 /* Broadcast.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Broadcast.entitlements; sourceTree = "<group>"; };
+		284144192A55546300358155 /* Helper.dart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.dart.swift; sourceTree = "<group>"; };
+		2841441C2A555C0700358155 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		77A2B4B4135852A1F52A7782 /* Pods_ReplayDemo_v2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReplayDemo_v2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9C88400C5106377D3BF144C /* Pods_BroadcastSetupUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BroadcastSetupUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2455532DA3FC046F4ED9170 /* Pods_Broadcast.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Broadcast.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +90,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4969698AF9BD968373E08C6 /* Pods_ReplayDemo_v2.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		284143F42A551F2100358155 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				284143FA2A551F2100358155 /* ReplayKit.framework in Frameworks */,
+				F800A05B704B55017D427385 /* Pods_Broadcast.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		284144002A551F2100358155 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				284144042A551F2100358155 /* ReplayKit.framework in Frameworks */,
+				284144062A551F2100358155 /* UIKit.framework in Frameworks */,
+				EF502F0707FB052E2FC20037 /* Pods_BroadcastSetupUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,7 +119,12 @@
 		284143D22A551EF500358155 = {
 			isa = PBXGroup;
 			children = (
+				284144192A55546300358155 /* Helper.dart.swift */,
+				2841441C2A555C0700358155 /* README.md */,
 				284143DD2A551EF500358155 /* ReplayDemo_v2 */,
+				284143FB2A551F2100358155 /* Broadcast */,
+				284144072A551F2100358155 /* BroadcastSetupUI */,
+				284143F82A551F2100358155 /* Frameworks */,
 				284143DC2A551EF500358155 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +133,8 @@
 			isa = PBXGroup;
 			children = (
 				284143DB2A551EF500358155 /* ReplayDemo_v2.app */,
+				284143F72A551F2100358155 /* Broadcast.appex */,
+				284144032A551F2100358155 /* BroadcastSetupUI.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -56,6 +142,7 @@
 		284143DD2A551EF500358155 /* ReplayDemo_v2 */ = {
 			isa = PBXGroup;
 			children = (
+				284143F22A551F0000358155 /* ReplayDemo_v2.entitlements */,
 				284143DE2A551EF500358155 /* AppDelegate.swift */,
 				284143E02A551EF500358155 /* SceneDelegate.swift */,
 				284143E22A551EF500358155 /* ViewController.swift */,
@@ -67,6 +154,37 @@
 			path = ReplayDemo_v2;
 			sourceTree = "<group>";
 		};
+		284143F82A551F2100358155 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				284143F92A551F2100358155 /* ReplayKit.framework */,
+				284144052A551F2100358155 /* UIKit.framework */,
+				F2455532DA3FC046F4ED9170 /* Pods_Broadcast.framework */,
+				D9C88400C5106377D3BF144C /* Pods_BroadcastSetupUI.framework */,
+				77A2B4B4135852A1F52A7782 /* Pods_ReplayDemo_v2.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		284143FB2A551F2100358155 /* Broadcast */ = {
+			isa = PBXGroup;
+			children = (
+				284144182A551F4200358155 /* Broadcast.entitlements */,
+				284143FC2A551F2100358155 /* SampleHandler.swift */,
+				284143FE2A551F2100358155 /* Info.plist */,
+			);
+			path = Broadcast;
+			sourceTree = "<group>";
+		};
+		284144072A551F2100358155 /* BroadcastSetupUI */ = {
+			isa = PBXGroup;
+			children = (
+				284144082A551F2100358155 /* BroadcastSetupViewController.swift */,
+				2841440A2A551F2100358155 /* Info.plist */,
+			);
+			path = BroadcastSetupUI;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,18 +192,59 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 284143EF2A551EF600358155 /* Build configuration list for PBXNativeTarget "ReplayDemo_v2" */;
 			buildPhases = (
+				32DB21CC0F46010DD5062876 /* [CP] Check Pods Manifest.lock */,
 				284143D72A551EF500358155 /* Sources */,
 				284143D82A551EF500358155 /* Frameworks */,
 				284143D92A551EF500358155 /* Resources */,
+				284144172A551F2100358155 /* Embed Foundation Extensions */,
+				21331DE782717A6FDE0625C1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				2841440C2A551F2100358155 /* PBXTargetDependency */,
+				2841440F2A551F2100358155 /* PBXTargetDependency */,
 			);
 			name = ReplayDemo_v2;
 			productName = ReplayDemo_v2;
 			productReference = 284143DB2A551EF500358155 /* ReplayDemo_v2.app */;
 			productType = "com.apple.product-type.application";
+		};
+		284143F62A551F2100358155 /* Broadcast */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 284144142A551F2100358155 /* Build configuration list for PBXNativeTarget "Broadcast" */;
+			buildPhases = (
+				7038ACED814979285BCC437F /* [CP] Check Pods Manifest.lock */,
+				284143F32A551F2100358155 /* Sources */,
+				284143F42A551F2100358155 /* Frameworks */,
+				284143F52A551F2100358155 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Broadcast;
+			productName = Broadcast;
+			productReference = 284143F72A551F2100358155 /* Broadcast.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		284144022A551F2100358155 /* BroadcastSetupUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 284144112A551F2100358155 /* Build configuration list for PBXNativeTarget "BroadcastSetupUI" */;
+			buildPhases = (
+				E54FA92E9030B70713605C0F /* [CP] Check Pods Manifest.lock */,
+				284143FF2A551F2100358155 /* Sources */,
+				284144002A551F2100358155 /* Frameworks */,
+				284144012A551F2100358155 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BroadcastSetupUI;
+			productName = BroadcastSetupUI;
+			productReference = 284144032A551F2100358155 /* BroadcastSetupUI.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -98,6 +257,12 @@
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
 					284143DA2A551EF500358155 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					284143F62A551F2100358155 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					284144022A551F2100358155 = {
 						CreatedOnToolsVersion = 14.3.1;
 					};
 				};
@@ -116,6 +281,8 @@
 			projectRoot = "";
 			targets = (
 				284143DA2A551EF500358155 /* ReplayDemo_v2 */,
+				284143F62A551F2100358155 /* Broadcast */,
+				284144022A551F2100358155 /* BroadcastSetupUI */,
 			);
 		};
 /* End PBXProject section */
@@ -131,7 +298,107 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		284143F52A551F2100358155 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		284144012A551F2100358155 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		21331DE782717A6FDE0625C1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ReplayDemo_v2/Pods-ReplayDemo_v2-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ReplayDemo_v2/Pods-ReplayDemo_v2-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ReplayDemo_v2/Pods-ReplayDemo_v2-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		32DB21CC0F46010DD5062876 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ReplayDemo_v2-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7038ACED814979285BCC437F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Broadcast-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E54FA92E9030B70713605C0F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BroadcastSetupUI-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		284143D72A551EF500358155 /* Sources */ = {
@@ -139,12 +406,43 @@
 			buildActionMask = 2147483647;
 			files = (
 				284143E32A551EF500358155 /* ViewController.swift in Sources */,
+				2841441A2A55546300358155 /* Helper.dart.swift in Sources */,
 				284143DF2A551EF500358155 /* AppDelegate.swift in Sources */,
 				284143E12A551EF500358155 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		284143F32A551F2100358155 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				284143FD2A551F2100358155 /* SampleHandler.swift in Sources */,
+				2841441B2A55546700358155 /* Helper.dart.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		284143FF2A551F2100358155 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				284144092A551F2100358155 /* BroadcastSetupViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2841440C2A551F2100358155 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 284144022A551F2100358155 /* BroadcastSetupUI */;
+			targetProxy = 2841440B2A551F2100358155 /* PBXContainerItemProxy */;
+		};
+		2841440F2A551F2100358155 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 284143F62A551F2100358155 /* Broadcast */;
+			targetProxy = 2841440E2A551F2100358155 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		284143E42A551EF500358155 /* Main.storyboard */ = {
@@ -283,8 +581,10 @@
 		284143F02A551EF600358155 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ReplayDemo_v2/ReplayDemo_v2.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 457W7LR2NE;
@@ -311,8 +611,10 @@
 		284143F12A551EF600358155 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ReplayDemo_v2/ReplayDemo_v2.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 457W7LR2NE;
@@ -336,6 +638,108 @@
 			};
 			name = Release;
 		};
+		284144122A551F2100358155 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 457W7LR2NE;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BroadcastSetupUI/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = BroadcastSetupUI;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "cn.hojin.ReplayDemo-v2.BroadcastSetupUI";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		284144132A551F2100358155 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 457W7LR2NE;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BroadcastSetupUI/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = BroadcastSetupUI;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "cn.hojin.ReplayDemo-v2.BroadcastSetupUI";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		284144152A551F2100358155 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Broadcast/Broadcast.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 457W7LR2NE;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Broadcast/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ReplayDemo_v2;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "cn.hojin.ReplayDemo-v2.Broadcast";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		284144162A551F2100358155 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Broadcast/Broadcast.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 457W7LR2NE;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Broadcast/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ReplayDemo_v2;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "cn.hojin.ReplayDemo-v2.Broadcast";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -353,6 +757,24 @@
 			buildConfigurations = (
 				284143F02A551EF600358155 /* Debug */,
 				284143F12A551EF600358155 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		284144112A551F2100358155 /* Build configuration list for PBXNativeTarget "BroadcastSetupUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				284144122A551F2100358155 /* Debug */,
+				284144132A551F2100358155 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		284144142A551F2100358155 /* Build configuration list for PBXNativeTarget "Broadcast" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				284144152A551F2100358155 /* Debug */,
+				284144162A551F2100358155 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
